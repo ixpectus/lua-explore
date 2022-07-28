@@ -1,3 +1,6 @@
+function CreateOrGetDebugWin()
+end
+
 local curBuf = vim.fn.bufnr("%")
 local curWin = vim.api.nvim_get_current_win()
 print(curWin)
