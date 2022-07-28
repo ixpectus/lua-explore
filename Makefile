@@ -1,2 +1,2 @@
 deploy:
-	git add :/ && git commit -m "docs" && git push origin master
+	git add :/ && git commit -m "docs" && git push origin main
