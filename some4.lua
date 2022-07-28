@@ -1,4 +1,8 @@
 function CreateOrGetDebugWin()
+  if DebugWindowID > 0 and vim.api.nvim_win_is_valid(curWin) then
+    return DebugWindowID
+  end
+  return 3
 end
 
 local curBuf = vim.fn.bufnr("%")
@@ -20,4 +24,4 @@ print(vim.api.nvim_win_is_valid(curWin))
 -- vim.api.nvim_win_set_buf(0, curBuf)
 -- vim.api.nvim_win_set_cursor(curWin, {10, 10})
 -- local win = vim.api.nvim_get_current_win()
--- print(win)
+--
